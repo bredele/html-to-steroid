@@ -1,0 +1,28 @@
+{
+  "name": "html-to-steroid",
+  "version": "1.0.0",
+  "description": "Compile HTML template into Steroid arguments",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bredele/html-to-steroid.git"
+  },
+  "keywords": [
+    "template",
+    "html",
+    "compile",
+    "steroid"
+  ],
+  "author": "Olvier <olivier.wietrich@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bredele/html-to-steroid/issues"
+  },
+  "homepage": "https://github.com/bredele/html-to-steroid#readme"
+}
