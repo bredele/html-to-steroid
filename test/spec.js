@@ -36,3 +36,12 @@ test('should substitute with an empty string if placeholder does not exist', ass
   const args = html('<button>${label}</button>', {})
   assert.deepEqual(args, [['<button>','</button>'], ''])
 })
+
+test('should substitute multiple values', assert => {
+  assert.plan(1)
+  const args = html('<button>${hello} ${world}</button>', {
+    hello: 'hello',
+    world: 'world!'
+  })
+  assert.deepEqual(args, [['<button>',' ', '</button>'], 'hello', 'world!'])
+})
