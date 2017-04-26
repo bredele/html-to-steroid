@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/bredele/html-to-steroid/issues"
   },
-  "homepage": "https://github.com/bredele/html-to-steroid#readme"
+  "homepage": "https://github.com/bredele/html-to-steroid#readme",
+  "devDependencies": {
+    "tape": "^4.6.3"
+  }
 }
