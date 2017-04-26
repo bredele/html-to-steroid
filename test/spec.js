@@ -45,3 +45,11 @@ test('should substitute multiple values', assert => {
   })
   assert.deepEqual(args, [['<button>',' ', '</button>'], 'hello', 'world!'])
 })
+
+test('should substitute multiple times the same value', assert => {
+  assert.plan(1)
+  const args = html('<button data-test="${label}">${label}</button>', {
+    label: 'hello world!'
+  })
+  assert.deepEqual(args, [['<button data-test="','">', '</button>'], 'hello world!', 'hello world!'])
+})
