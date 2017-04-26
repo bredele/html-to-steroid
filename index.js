@@ -5,8 +5,7 @@ module.exports = function(html, data = {}) {
   let args = []
   let start = 0
   html.replace(/\$\{([^{}]*)\}/g, function(_, placeholder, idx) {
-    const value = data[placeholder]
-    if(value) args.push(value)
+    args.push(data[placeholder] || '')
     chunks.push(html.substring(start, idx))
     start = idx + 3 + placeholder.length
   })

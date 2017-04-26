@@ -30,3 +30,9 @@ test('should chunk html and substitute placeholder', assert => {
   })
   assert.deepEqual(args, [['<button>','</button>'], 'hello world!'])
 })
+
+test('should substitute with an empty string if placeholder does not exist', assert => {
+  assert.plan(1)
+  const args = html('<button>${label}</button>', {})
+  assert.deepEqual(args, [['<button>','</button>'], ''])
+})
