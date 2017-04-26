@@ -22,3 +22,11 @@ test('should chunk html if placeholder', assert => {
   const args = html('<button>${label}</button>')
   assert.deepEqual(args[0], ['<button>','</button>'])
 })
+
+test('should chunk html and substitute placeholder', assert => {
+  assert.plan(1)
+  const args = html('<button>${label}</button>', {
+    label: 'hello world!'
+  })
+  assert.deepEqual(args, [['<button>','</button>'], 'hello world!'])
+})
