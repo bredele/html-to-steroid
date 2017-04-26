@@ -5,11 +5,9 @@
 [![Downloads](https://img.shields.io/npm/dm/html-to-steroid.svg?style=flat-square)](http://npm-stat.com/charts.html?package=html-to-steroid)
 [![pledge](https://bredele.github.io/contributing-guide/community-pledge.svg)](https://github.com/bredele/contributing-guide/blob/master/community.md)
 
-Convert HTML string into chunks of data that can be feed to any tagged template function and especially [Steroid](https://github.com/bredele/steroid)
+Convert HTML template string into chunks of data that can be feed to any tagged template function and especially [Steroid](https://github.com/bredele/steroid)
 
 ## Usage
-
-No weird syntax or compilation. Steroid is pure HTML and JavaScript and a minute is enough to get your hands on it.
 
 ```javascript
 const chunk = require('html-to-steroid')
