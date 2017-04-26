@@ -1,5 +1,14 @@
 
 
+/**
+ * Return a list of arguments accepted by Steroid.
+ *
+ * @param {String} html
+ * @param {Object} data
+ * @return {Array}
+ * @api public
+ */
+
 module.exports = function(html, data = {}) {
   let chunks = []
   let args = []
